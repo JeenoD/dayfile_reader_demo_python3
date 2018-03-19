@@ -1,1 +1,1 @@
-# demos_python3
+# day_reader_demo
