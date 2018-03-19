@@ -1,1 +1,1 @@
-# day_reader_demo
+# a demo for stock-file (.day) reader with python3, giving a list back
