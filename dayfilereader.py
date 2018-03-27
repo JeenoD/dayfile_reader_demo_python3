@@ -13,7 +13,7 @@ def loadDay(filelocation):
         line = file.read(32)		# 读取文件中的32个字节大小数据
         if line:
             stock_info = Stock()
-            line_p = struct.unpack('i4Ii2I', line)		# 按指定的格式分别对32个字节进行拆分并分装成一日的数据:line_p
+            line_p = struct.unpack('i4If2I', line)		# 按指定的格式分别对32个字节进行拆分并分装成一日的数据:line_p
             stock_info.setStock(line_p)					
             stock_list.append(stock_info)				# 读取的日数据存放进列表
         else:
